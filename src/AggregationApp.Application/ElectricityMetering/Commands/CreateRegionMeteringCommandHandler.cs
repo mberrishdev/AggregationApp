@@ -33,7 +33,8 @@ namespace AggregationApp.Application.ElectricityMetering.Commands
             {
                 foreach (var regionMetering in regionMeteringList)
                 {
-                    var regionInDb = await _repository.GetAsync(predicate: x => x.Name.Equals(regionMetering.TINKLAS);
+                    var regionInDb = await _repository.GetAsync(predicate: x => x.Name.Equals(regionMetering.TINKLAS),
+                        cancellationToken: cancellationToken);
                     if (regionInDb is not null)
                         //this region already exist in DB
                         continue;
@@ -41,7 +42,7 @@ namespace AggregationApp.Application.ElectricityMetering.Commands
                     var createRegionCommand = new CreateRegionMeteringCommand()
                     {
                         RegionName = regionMetering.TINKLAS,
-                        CreateRegionMeteringDetailCommands = regionMetering.RegionMeteringDetailModel
+                        CreateRegionMeteringDetailCommands = regionMetering.RegionMeteringDetailModels
                         .Select(x => new CreateRegionMeteringDetailCommand()
                         {
                             ObjName = x.OBT_PAVADINIMAS,

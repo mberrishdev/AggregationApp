@@ -12,7 +12,7 @@ namespace AggregationApp.Application.Mapping
         {
             CreateMap<RegionMeteringModel, CreateRegionMeteringCommand>()
                 .ForMember(x => x.RegionName, y => y.MapFrom(c => c.TINKLAS)).ReverseMap()
-                .ForMember(x => x.RegionMeteringDetailModel, y => y.MapFrom(c => c.CreateRegionMeteringDetailCommands)).ReverseMap();
+                .ForMember(x => x.RegionMeteringDetailModels, y => y.MapFrom(c => c.CreateRegionMeteringDetailCommands)).ReverseMap();
 
             CreateMap<RegionMeteringDetailModel, CreateRegionMeteringDetailCommand>()
                 .ForMember(x => x.ObjName, y => y.MapFrom(c => c.OBT_PAVADINIMAS))

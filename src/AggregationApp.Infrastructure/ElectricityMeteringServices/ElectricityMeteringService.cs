@@ -76,7 +76,7 @@ namespace AggregationApp.Infrastructure.MeteringPlant
                         .Select(y => new RegionMeteringModel
                         {
                             TINKLAS = y.Key,
-                            RegionMeteringDetailModel = y.ToList()
+                            RegionMeteringDetailModels = y.ToList()
                         }).ToList();
 
             return new List<RegionMeteringModel>();

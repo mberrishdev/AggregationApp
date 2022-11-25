@@ -13,7 +13,7 @@ namespace AggregationApp.Application.ElectricityMetering.Queries
     {
         public string? RegionName { get; set; }
         public int PageIndex { get; set; } = 0;
-        public int PageSize { get; set; } = 100;
+        public int PageSize { get; set; } = 50;
     }
 
     public class GetElectrisityMeteringListQueryHandler : IRequestHandler<GetElectrisityMeteringListQuery, List<RegionModel>>
