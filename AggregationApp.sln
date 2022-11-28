@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregationApp.Persistence"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{24CA2DC3-A5A2-4DFC-9538-2A586A3FC1CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggregationApp.Application.Tests", "src\AggregationApp.Application.Tests\AggregationApp.Application.Tests.csproj", "{914D2B61-1CC0-4115-90C9-55ACB368C7BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregationApp.Application.Tests", "src\AggregationApp.Application.Tests\AggregationApp.Application.Tests.csproj", "{914D2B61-1CC0-4115-90C9-55ACB368C7BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggregationApp.Infrastructure.Test", "src\AggregationApp.Infrastructure.Test\AggregationApp.Infrastructure.Test.csproj", "{96CE3C39-D126-4BB5-B1C4-F7567A401B44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregationApp.Infrastructure.Test", "src\AggregationApp.Infrastructure.Test\AggregationApp.Infrastructure.Test.csproj", "{96CE3C39-D126-4BB5-B1C4-F7567A401B44}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{592176E1-963A-4CA5-A084-728FF70CA6AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +181,26 @@ Global
 		{96CE3C39-D126-4BB5-B1C4-F7567A401B44}.Release|x64.Build.0 = Release|Any CPU
 		{96CE3C39-D126-4BB5-B1C4-F7567A401B44}.Release|x86.ActiveCfg = Release|Any CPU
 		{96CE3C39-D126-4BB5-B1C4-F7567A401B44}.Release|x86.Build.0 = Release|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Debug|ARM.Build.0 = Debug|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Debug|x64.Build.0 = Debug|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Debug|x86.Build.0 = Debug|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Release|ARM.ActiveCfg = Release|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Release|ARM.Build.0 = Release|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Release|ARM64.Build.0 = Release|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Release|x64.ActiveCfg = Release|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Release|x64.Build.0 = Release|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Release|x86.ActiveCfg = Release|Any CPU
+		{592176E1-963A-4CA5-A084-728FF70CA6AD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
