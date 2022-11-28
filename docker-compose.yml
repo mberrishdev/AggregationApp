@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  aggregationdb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+
+  aggregation.api:
+    image: ${DOCKER_REGISTRY-}aggregationapi
+    build:
+      context: .
+      dockerfile: src/Presentation/Aggregation.Api/Dockerfile

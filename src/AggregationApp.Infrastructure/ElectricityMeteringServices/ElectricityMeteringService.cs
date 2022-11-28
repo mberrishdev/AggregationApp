@@ -17,7 +17,7 @@ namespace AggregationApp.Infrastructure.MeteringPlant
         {
             _filePaths = new List<string>()
                         {
-                            //"10765/2022-02.csv",
+                            "10765/2022-02.csv",
                             "10765/2022-03.csv",
                             "10765/2022-04.csv",
                             "10766/2022-05.csv"
@@ -52,7 +52,7 @@ namespace AggregationApp.Infrastructure.MeteringPlant
                     using var csv = new CsvReader(reader, csvConfiguration);
 
                     var data = csv.GetRecords<RegionMeteringDetailModel>()
-                        .Where(y => y.OBT_PAVADINIMAS.Equals(_filterdObject)).Take(10)
+                        .Where(y => y.OBT_PAVADINIMAS.Equals(_filterdObject))
                         .ToList();
 
                     regionDetailModelList.Add(data);
